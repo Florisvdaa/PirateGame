@@ -456,6 +456,7 @@ MonoBehaviour:
   target: {fileID: 738200204}
   offset: {x: 0, y: 80, z: -100}
   smoothSpeed: 0.125
+  rotationSmoothSpeed: 5
 --- !u!1 &1228684578
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +626,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ca1af5413cfec47ab975dd7f75ee74, type: 3}
+--- !u!1 &1710936593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2146725164953488482, guid: 59bec68f83927544fbd8d4cc854f48c5, type: 3}
+  m_PrefabInstance: {fileID: 4142259895280629925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4142259895280629925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -678,8 +684,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7976702342879833746, guid: 59bec68f83927544fbd8d4cc854f48c5, type: 3}
-      propertyPath: speed
-      value: 25
+      propertyPath: playerVisual
+      value: 
+      objectReference: {fileID: 1710936593}
+    - target: {fileID: 7976702342879833746, guid: 59bec68f83927544fbd8d4cc854f48c5, type: 3}
+      propertyPath: rotationSpeed
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

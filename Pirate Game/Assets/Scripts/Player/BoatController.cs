@@ -7,6 +7,9 @@ public class BoatController : MonoBehaviour
     [SerializeField] private float speed = 10f;
     [SerializeField] private float rotationSpeed = 100f;
 
+    [SerializeField] private GameObject playerVisual;
+    [SerializeField] private float tiltAngle = 15f;
+
     private Rigidbody rb;
 
     private void Start()
@@ -32,5 +35,22 @@ public class BoatController : MonoBehaviour
         // Apply movement and rotation
         rb.MovePosition(rb.position + movement);
         rb.MoveRotation(rb.rotation * rotation);
+
+        TiltPlayerVisual(turn);
+    }
+
+    private void TiltPlayerVisual(float turn)
+    {
+        // Only tilt the visual on Z-axis when turning
+        if (turn != 0)
+        {
+            float tiltZ = -turn * tiltAngle; // Rotate on Z-axis when turning
+            playerVisual.transform.localRotation = Quaternion.Euler(0f, 0f, tiltZ);
+        }
+        else
+        {
+            // Reset the visual to a neutral Z rotation when not turning
+            playerVisual.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        }
     }
 }
