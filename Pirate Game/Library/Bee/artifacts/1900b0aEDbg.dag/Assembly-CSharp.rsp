@@ -355,6 +355,8 @@
 "Assets/Imports/LowPolyWater_Pack/Scripts/LowPolyWater.cs"
 "Assets/Scripts/Camera/CameraFollow.cs"
 "Assets/Scripts/Player/BoatController.cs"
+"Assets/Scripts/Player/Shooting.cs"
+"Assets/Scripts/WeatherSystem/WindSystem.cs"
 -langversion:9.0
 
 /deterministic

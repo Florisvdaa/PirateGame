@@ -348,6 +348,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7646729211090937602, guid: 59bec68f83927544fbd8d4cc854f48c5, type: 3}
   m_PrefabInstance: {fileID: 4142259895280629925}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &847839709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847839711}
+  - component: {fileID: 847839710}
+  m_Layer: 0
+  m_Name: WindSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &847839710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847839709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231b6fdb129cde644a7633e532a02013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windDirectionEnum: 2
+  windStrength: 5
+--- !u!4 &847839711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847839709}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.300191, y: 8.819537, z: 10.241385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,11 +672,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ca1af5413cfec47ab975dd7f75ee74, type: 3}
---- !u!1 &1710936593 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2146725164953488482, guid: 59bec68f83927544fbd8d4cc854f48c5, type: 3}
-  m_PrefabInstance: {fileID: 4142259895280629925}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4142259895280629925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,14 +724,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7976702342879833746, guid: 59bec68f83927544fbd8d4cc854f48c5, type: 3}
-      propertyPath: playerVisual
-      value: 
-      objectReference: {fileID: 1710936593}
-    - target: {fileID: 7976702342879833746, guid: 59bec68f83927544fbd8d4cc854f48c5, type: 3}
-      propertyPath: rotationSpeed
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -707,3 +740,4 @@ SceneRoots:
   - {fileID: 1537379632}
   - {fileID: 376261491}
   - {fileID: 46933370}
+  - {fileID: 847839711}
