@@ -3,24 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 public enum WindDirection
 {
-    North,       
-    NorthEast,   
-    East,        
-    SouthEast,   
-    South,       
-    SouthWest,   
-    West,        
-    NorthWest    
+    North,
+    NorthEast,
+    East,
+    SouthEast,
+    South,
+    SouthWest,
+    West,
+    NorthWest
 }
 public class WindSystem : MonoBehaviour
 {
     public static WindSystem Instance { get; private set; }
 
-    // Wind properties
     [SerializeField] private WindDirection windDirectionEnum = WindDirection.East; // Default wind direction
     [SerializeField] private float windStrength = 5f; // Default wind strength
+    [SerializeField] private float windChangeInterval = 10f; // Time interval to change wind direction
 
     private Vector3 windDirection;
+    private float windChangeTimer;
 
     private void Awake()
     {
@@ -37,6 +38,26 @@ public class WindSystem : MonoBehaviour
 
         // Initialize wind direction based on enum
         SetWindDirectionFromEnum();
+    }
+    private void Update()
+    {
+        windChangeTimer += Time.deltaTime;
+
+        if (windChangeTimer >= windChangeInterval)
+        {
+            ChangeWindDirection();
+            windChangeTimer = 0f;
+        }
+    }
+    private void ChangeWindDirection()
+    {
+        // Randomly choose a new wind direction from the enum
+        windDirectionEnum = (WindDirection)Random.Range(0, System.Enum.GetValues(typeof(WindDirection)).Length);
+
+        // Update the wind direction vector
+        SetWindDirectionFromEnum();
+
+        Debug.Log("Wind Direction Changed: " + windDirectionEnum);
     }
 
     private void SetWindDirectionFromEnum()
@@ -73,6 +94,11 @@ public class WindSystem : MonoBehaviour
     public Vector3 GetWindDirection()
     {
         return windDirection;
+    }
+
+    public WindDirection GetCurrentWindDirectionEnum()
+    {
+        return windDirectionEnum;
     }
 
     public float GetWindStrength()

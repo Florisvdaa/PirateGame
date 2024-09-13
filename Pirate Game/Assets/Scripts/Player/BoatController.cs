@@ -20,23 +20,18 @@ public class BoatController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        Move();
-    }
+        // Adjust speed based on wind direction
+        AdjustSpeedBasedOnWind();
 
-    private void Move()
-    {
         // Get input from user
         float moveForward = Input.GetAxis("Vertical");
         float turn = Input.GetAxis("Horizontal");
 
         // Calculate movement and rotation
-        Vector3 movement = transform.forward * moveForward * speed * Time.deltaTime;
-        Quaternion rotation = Quaternion.Euler(0f, turn * rotationSpeed * Time.deltaTime, 0f);
-
-        // Adjust speed based on wind direction
-        AdjustSpeedBasedOnWind();
+        Vector3 movement = transform.forward * moveForward * speed * Time.fixedDeltaTime;
+        Quaternion rotation = Quaternion.Euler(0f, turn * rotationSpeed * Time.fixedDeltaTime, 0f);
 
         // Apply movement and rotation
         rb.MovePosition(rb.position + movement);
@@ -71,9 +66,25 @@ public class BoatController : MonoBehaviour
             // Calculate the dot product to determine how aligned the boat is with the wind
             float alignment = Vector3.Dot(transform.forward, windDirection.normalized);
 
-            // Adjust the speed based on wind alignment
-            float speedChange = alignment * windStrength * Time.deltaTime;
-            speed = Mathf.Clamp(speed + speedChange, minSpeed, maxSpeed);
+            // Calculate the speed change based on wind strength and alignment
+            float speedChange = alignment * windStrength * Time.fixedDeltaTime;
+
+            // Update speed based on calculated speed change
+            float newSpeed = speed + speedChange;
+
+            // Set speed to maximum if it exceeds max speed
+            if (newSpeed > maxSpeed)
+            {
+                newSpeed = maxSpeed;
+            }
+
+            // Set speed to minimum if it falls below min speed (if needed)
+            if (newSpeed < minSpeed)
+            {
+                newSpeed = minSpeed;
+            }
+
+            speed = newSpeed;
         }
     }
 }

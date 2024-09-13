@@ -109,7 +109,7 @@ MonoBehaviour:
   speed: 25
   rotationSpeed: 30
   maxSpeed: 40
-  minSpeed: 5
+  minSpeed: 15
   playerVisual: {fileID: 2146725164953488482}
   tiltAngle: 15
 --- !u!114 &2293486545917651299
