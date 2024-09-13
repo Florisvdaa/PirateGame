@@ -8,7 +8,7 @@ public class BoatController : MonoBehaviour
     [SerializeField] private float rotationSpeed = 100f;
 
     [SerializeField] private float maxSpeed = 40f;  // Maximum speed the boat can reach
-    [SerializeField] private float minSpeed = 5f;   // Minimum speed the boat can reach
+    [SerializeField] private float minSpeed = 15f;   // Minimum speed the boat can reach
 
     [SerializeField] private GameObject playerVisual;
     [SerializeField] private float tiltAngle = 15f;
