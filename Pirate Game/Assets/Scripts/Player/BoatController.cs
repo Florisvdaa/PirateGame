@@ -13,6 +13,8 @@ public class BoatController : MonoBehaviour
     [SerializeField] private GameObject playerVisual;
     [SerializeField] private float tiltAngle = 15f;
 
+    [SerializeField] private float interactRange;
+
     private Rigidbody rb;
 
     private void Start()
@@ -38,6 +40,8 @@ public class BoatController : MonoBehaviour
         rb.MoveRotation(rb.rotation * rotation);
 
         TiltPlayerVisual(turn);
+
+        HandleDetection();
     }
 
     private void TiltPlayerVisual(float turn)
@@ -86,5 +90,27 @@ public class BoatController : MonoBehaviour
 
             speed = newSpeed;
         }
+    }
+    private void HandleDetection()
+    {
+        // Find all colliders within the interactRange radius
+
+        Collider[] colliders = Physics.OverlapSphere(transform.position, interactRange);
+
+        foreach (Collider collider in colliders)
+        {
+            // check if the object has an IInteractable componnent
+            IInteratable interactable = collider.GetComponent<IInteratable>();
+            if (interactable != null)
+            {
+                interactable.Interact();
+                return;
+            }
+        }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, interactRange);
     }
 }
