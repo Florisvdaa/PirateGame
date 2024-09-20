@@ -10,6 +10,9 @@ public class BoatController : MonoBehaviour
     [SerializeField] private float maxSpeed = 40f;  // Maximum speed the boat can reach
     [SerializeField] private float minSpeed = 15f;   // Minimum speed the boat can reach
 
+    [SerializeField] private float drag = 1f;
+    private bool isMovingForward = false;
+
     [SerializeField] private GameObject playerVisual;
     [SerializeField] private float tiltAngle = 15f;
 
@@ -30,6 +33,20 @@ public class BoatController : MonoBehaviour
         // Get input from user
         float moveForward = Input.GetAxis("Vertical");
         float turn = Input.GetAxis("Horizontal");
+
+        //// Apply drag if no forward input is given
+        //if (moveForward > 0)
+        //{
+        //    // When moving forward, adjust speed based on wind
+        //    AdjustSpeedBasedOnWind();
+        //    isMovingForward = true;
+        //}
+        //else
+        //{
+        //    // If no input, apply drag to the current speed
+        //    //ApplyDrag();
+        //    isMovingForward = false;
+        //}
 
         // Calculate movement and rotation
         Vector3 movement = transform.forward * moveForward * speed * Time.fixedDeltaTime;
@@ -74,23 +91,26 @@ public class BoatController : MonoBehaviour
             float speedChange = alignment * windStrength * Time.fixedDeltaTime;
 
             // Update speed based on calculated speed change
-            float newSpeed = speed + speedChange;
+            speed += speedChange;
 
-            // Set speed to maximum if it exceeds max speed
-            if (newSpeed > maxSpeed)
-            {
-                newSpeed = maxSpeed;
-            }
-
-            // Set speed to minimum if it falls below min speed (if needed)
-            if (newSpeed < minSpeed)
-            {
-                newSpeed = minSpeed;
-            }
-
-            speed = newSpeed;
+            // Clamp the speed between minSpeed and maxSpeed
+            speed = Mathf.Clamp(speed, minSpeed, maxSpeed);
         }
     }
+    //private void ApplyDrag()
+    //{
+    //    Gradually reduce speed by applying drag when the forward button is released
+    //    if (!isMovingForward)
+    //    {
+    //        speed -= drag * Time.fixedDeltaTime;
+
+    //        Ensure speed doesn't go below minSpeed
+    //        if (speed < minSpeed)
+    //        {
+    //            speed = minSpeed;
+    //        }
+    //    }
+    //}
     private void HandleDetection()
     {
         // Find all colliders within the interactRange radius

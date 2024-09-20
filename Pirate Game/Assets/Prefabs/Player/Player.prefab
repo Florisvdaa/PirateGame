@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 7826575034164610463}
   - component: {fileID: 7976702342879833746}
   - component: {fileID: 2293486545917651299}
-  - component: {fileID: 2780937296357315835}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -77,7 +76,7 @@ Rigidbody:
   m_GameObject: {fileID: 1448237093710133718}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0.015
+  m_Drag: 0.01
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -93,7 +92,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &7976702342879833746
 MonoBehaviour:
@@ -113,7 +112,7 @@ MonoBehaviour:
   minSpeed: 15
   playerVisual: {fileID: 2146725164953488482}
   tiltAngle: 15
-  interactRange: 0
+  interactRange: 50
 --- !u!114 &2293486545917651299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,21 +133,6 @@ MonoBehaviour:
   rightMaxDistance: 100
   moveSpeed: 15
   isLeftAim: 1
---- !u!114 &2780937296357315835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448237093710133718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c397988b842cf304dbbe32032c455ef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 7826575034164610463}
-  depthBeforeSubmerged: 1
-  displacementAmount: 3
 --- !u!1 &2943666438195141063
 GameObject:
   m_ObjectHideFlags: 0
