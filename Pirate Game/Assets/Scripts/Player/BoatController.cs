@@ -1,3 +1,4 @@
+using GogoGaga.OptimizedRopesAndCables;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,8 @@ public class BoatController : MonoBehaviour
     [SerializeField] private float tiltAngle = 15f;
 
     [SerializeField] private float interactRange;
+
+    [SerializeField] private GameObject ropePrefab;
 
     private Rigidbody rb;
 
@@ -123,7 +126,7 @@ public class BoatController : MonoBehaviour
             IInteratable interactable = collider.GetComponent<IInteratable>();
             if (interactable != null)
             {
-                interactable.Interact();
+                interactable.Interact(transform);
                 return;
             }
         }

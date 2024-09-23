@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IInteratable
 {
-    void Interact();
+    void Interact(Transform playerTransfrom);
 }
