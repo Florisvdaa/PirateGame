@@ -371,6 +371,7 @@
 "Assets/Scripts/UI/PlayerDirection.cs"
 "Assets/Scripts/Waves/WaterManager.cs"
 "Assets/Scripts/Waves/WaveManager.cs"
+"Assets/Scripts/Weapons/CanonBall.cs"
 "Assets/Scripts/WeatherSystem/WindSystem.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

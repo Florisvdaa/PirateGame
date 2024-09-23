@@ -28,6 +28,10 @@ public class BoatController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Update()
+    {
+        HandleDetection();
+    }
     private void FixedUpdate()
     {
         // Adjust speed based on wind direction
@@ -36,20 +40,6 @@ public class BoatController : MonoBehaviour
         // Get input from user
         float moveForward = Input.GetAxis("Vertical");
         float turn = Input.GetAxis("Horizontal");
-
-        //// Apply drag if no forward input is given
-        //if (moveForward > 0)
-        //{
-        //    // When moving forward, adjust speed based on wind
-        //    AdjustSpeedBasedOnWind();
-        //    isMovingForward = true;
-        //}
-        //else
-        //{
-        //    // If no input, apply drag to the current speed
-        //    //ApplyDrag();
-        //    isMovingForward = false;
-        //}
 
         // Calculate movement and rotation
         Vector3 movement = transform.forward * moveForward * speed * Time.fixedDeltaTime;
@@ -60,8 +50,6 @@ public class BoatController : MonoBehaviour
         rb.MoveRotation(rb.rotation * rotation);
 
         TiltPlayerVisual(turn);
-
-        HandleDetection();
     }
 
     private void TiltPlayerVisual(float turn)
@@ -100,20 +88,7 @@ public class BoatController : MonoBehaviour
             speed = Mathf.Clamp(speed, minSpeed, maxSpeed);
         }
     }
-    //private void ApplyDrag()
-    //{
-    //    Gradually reduce speed by applying drag when the forward button is released
-    //    if (!isMovingForward)
-    //    {
-    //        speed -= drag * Time.fixedDeltaTime;
 
-    //        Ensure speed doesn't go below minSpeed
-    //        if (speed < minSpeed)
-    //        {
-    //            speed = minSpeed;
-    //        }
-    //    }
-    //}
     private void HandleDetection()
     {
         // Find all colliders within the interactRange radius

@@ -4,95 +4,69 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    [SerializeField] private Transform leftAimStartTransform; // Starting position for the left aim
-    [SerializeField] private Transform leftAimEndTransform;   // End position for the left aim
+    [SerializeField] private Transform leftAimStartTransform;  // Starting position for the left aim
     [SerializeField] private Transform rightAimStartTransform; // Starting position for the right aim
-    [SerializeField] private Transform rightAimEndTransform;   // End position for the right aim
 
-    [SerializeField] private float leftMaxDistance = -100f;    // Max distance for the left aim
-    [SerializeField] private float rightMaxDistance = 100f;  // Max distance for the right aim (negative direction)
-    [SerializeField] private float moveSpeed = 15f;             // Speed at which the transforms move
+    [SerializeField] private GameObject projectilePrefab;      // Prefab of the projectile to shoot
+    [SerializeField] private float projectileSpeed = 20f;      // Speed of the projectile
 
-    private bool isAiming = false;     // Track whether the right mouse button is held
-    [SerializeField] private bool isLeftAim = true;     // Bool to check if left or right aim is selected (true for left, false for right)
+    [SerializeField] private GameObject leftActivationObject;  // GameObject for the left side
+    [SerializeField] private GameObject rightActivationObject; // GameObject for the right side
 
     private void Update()
     {
+        // Handle shooting and activating objects when left or right mouse button is pressed
+        if (Input.GetMouseButtonDown(0)) // Left mouse button pressed
+        {
+            ShootProjectile(true); // Shoot to the left
+            ActivateSide(true);    // Activate left side and deactivate right side
+        }
         if (Input.GetMouseButtonDown(1)) // Right mouse button pressed
         {
-            isAiming = true;
+            ShootProjectile(false); // Shoot to the right
+            ActivateSide(false);    // Activate right side and deactivate left side
         }
+    }
 
-        if (Input.GetMouseButtonUp(1)) // Right mouse button released
-        {
-            isAiming = false;
-        }
+    private void ShootProjectile(bool isLeftShoot)
+    {
+        Transform aimStartTransform = isLeftShoot ? leftAimStartTransform : rightAimStartTransform;
 
-        // Toggle between left and right aim with some input (e.g., press 'L' for left, 'R' for right)
-        if (Input.GetKeyDown(KeyCode.L)) // Press 'L' to aim left
+        if (aimStartTransform != null && projectilePrefab != null)
         {
-            isLeftAim = true;
-        }
-        if (Input.GetKeyDown(KeyCode.R)) // Press 'R' to aim right
-        {
-            isLeftAim = false;
-        }
+            // Instantiate the projectile at the aimStartTransform's position and rotation
+            GameObject projectile = Instantiate(projectilePrefab, aimStartTransform.position, aimStartTransform.rotation);
 
-        // Handle aiming logic
-        if (isAiming)
-        {
-            if (isLeftAim)
+            // Apply velocity to the projectile in the direction (right for right side, left for left side)
+            Rigidbody rb = projectile.GetComponent<Rigidbody>();
+            if (rb != null)
             {
-                MoveEndTransformAway(leftAimStartTransform, leftAimEndTransform, leftMaxDistance);
+                // Shoot to the right for right aim, or to the left for left aim
+                Vector3 direction = isLeftShoot ? -aimStartTransform.right : aimStartTransform.right;
+                rb.velocity = direction * projectileSpeed;
             }
-            else
-            {
-                MoveEndTransformAway(rightAimStartTransform, rightAimEndTransform, rightMaxDistance);
-            }
+        }
+    }
+
+    private void ActivateSide(bool isLeftSide)
+    {
+        // Activate the left side object and deactivate the right side if shooting left
+        // Activate the right side object and deactivate the left side if shooting right
+        if (isLeftSide)
+        {
+            if (leftActivationObject != null)
+                leftActivationObject.SetActive(true);
+
+            if (rightActivationObject != null)
+                rightActivationObject.SetActive(false);
         }
         else
         {
-            if (isLeftAim)
-            {
-                MoveEndTransformBack(leftAimStartTransform, leftAimEndTransform);
-            }
-            else
-            {
-                MoveEndTransformBack(rightAimStartTransform, rightAimEndTransform);
-            }
-        }
-    }
+            if (rightActivationObject != null)
+                rightActivationObject.SetActive(true);
 
-    private void MoveEndTransformAway(Transform startTransform, Transform endTransform, float maxDistance)
-    {
-        if (startTransform != null && endTransform != null)
-        {
-            // Calculate the current distance between start and end transforms
-            float currentDistance = Vector3.Distance(endTransform.position, startTransform.position);
-
-            // Check if the end transform has reached or exceeded the max distance
-            if (Mathf.Abs(currentDistance) < Mathf.Abs(maxDistance))
-            {
-                // Move the end transform in the correct direction of the start transform (X axis movement)
-                Vector3 direction = (maxDistance > 0) ? startTransform.right : -startTransform.right; // Use positive or negative X direction
-                endTransform.position += direction * moveSpeed * Time.deltaTime;
-
-                // Clamp the position so that the end transform doesn't exceed the max distance
-                currentDistance = Vector3.Distance(endTransform.position, startTransform.position);
-                if (Mathf.Abs(currentDistance) > Mathf.Abs(maxDistance))
-                {
-                    endTransform.position = startTransform.position + direction * Mathf.Abs(maxDistance);
-                }
-            }
-        }
-    }
-
-    private void MoveEndTransformBack(Transform startTransform, Transform endTransform)
-    {
-        if (startTransform != null && endTransform != null)
-        {
-            // Move the end transform smoothly back to the start position
-            endTransform.position = Vector3.MoveTowards(endTransform.position, startTransform.position, moveSpeed * Time.deltaTime);
+            if (leftActivationObject != null)
+                leftActivationObject.SetActive(false);
         }
     }
 }

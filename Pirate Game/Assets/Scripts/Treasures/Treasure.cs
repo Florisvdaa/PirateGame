@@ -13,7 +13,7 @@ public class Treasure : MonoBehaviour, IInteratable
     [SerializeField] private float floatFrequency = 1f;   // Frequency for floating effect
 
     private Rope rope;
-    private bool hasRopeConnected = false;
+    [SerializeField] private bool hasRopeConnected = false;
     private Vector3 originalPosition;
 
     public void OpenChest()
@@ -36,6 +36,7 @@ public class Treasure : MonoBehaviour, IInteratable
 
         if (Input.GetKeyDown(KeyCode.E) && !hasRopeConnected)
         {
+            //OpenChest();
             ConnectRope(playerTransform);
         }
     }
