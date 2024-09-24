@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Treasure : MonoBehaviour, IInteratable
 {
+    [SerializeField] private ItemPoolSO itemPool;
+
+    private bool isOpened = false;
     [SerializeField] private GameObject ropePrefab;
     [SerializeField] private float lerpSpeed = 5f;
     [SerializeField] private float minDistanceToPlayer = 2f; // Minimum distance to maintain from player
@@ -18,7 +21,24 @@ public class Treasure : MonoBehaviour, IInteratable
 
     public void OpenChest()
     {
-        Debug.Log("Opening chest");
+        // Add opening animation
+
+        isOpened = true;
+
+        // Get a random item from the item pool
+        ItemSO randomItem = GetRandomItem();
+
+        if (randomItem != null)
+        {
+            Debug.Log("You received: " + randomItem.itemName);
+
+            // Add the random item to the player's inventory (you need an InventoryManager to handle this)
+            InventoryManager.Instance.AddItemToInventory(randomItem);
+        }
+        else
+        {
+            Debug.Log("No items available in the pool.");
+        }
     }
 
     private void ConnectRope(Transform playerTransform)
@@ -33,12 +53,16 @@ public class Treasure : MonoBehaviour, IInteratable
     public void Interact(Transform playerTransform)
     {
         // Create a UI that shows when you are in range to handle input
-
-        if (Input.GetKeyDown(KeyCode.E) && !hasRopeConnected)
+        if (Input.GetKeyDown(KeyCode.E) && !isOpened)
         {
-            //OpenChest();
-            ConnectRope(playerTransform);
+            OpenChest();
         }
+
+        //if (Input.GetKeyDown(KeyCode.E) && !hasRopeConnected)
+        //{
+        //    //OpenChest();
+        //    ConnectRope(playerTransform);
+        //}
     }
 
     private void Update()
@@ -68,5 +92,16 @@ public class Treasure : MonoBehaviour, IInteratable
             float floatOffset = Mathf.Sin(Time.time * floatFrequency) * floatAmplitude;
             transform.position = new Vector3(transform.position.x, transform.position.y + floatOffset, transform.position.z);
         }
+    }
+
+    private ItemSO GetRandomItem()
+    {
+        if (itemPool.itemPool.Count == 0)
+        {
+            return null;
+        }
+
+        int randomIndex = Random.Range(0, itemPool.itemPool.Count);
+        return itemPool.itemPool[randomIndex];
     }
 }

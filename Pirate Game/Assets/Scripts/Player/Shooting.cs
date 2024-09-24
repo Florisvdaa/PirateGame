@@ -13,18 +13,19 @@ public class Shooting : MonoBehaviour
     [SerializeField] private GameObject leftActivationObject;  // GameObject for the left side
     [SerializeField] private GameObject rightActivationObject; // GameObject for the right side
 
+
     private void Update()
     {
         // Handle shooting and activating objects when left or right mouse button is pressed
         if (Input.GetMouseButtonDown(0)) // Left mouse button pressed
         {
-            ShootProjectile(true); // Shoot to the left
             ActivateSide(true);    // Activate left side and deactivate right side
+            ShootProjectile(true); // Shoot to the left
         }
         if (Input.GetMouseButtonDown(1)) // Right mouse button pressed
         {
-            ShootProjectile(false); // Shoot to the right
             ActivateSide(false);    // Activate right side and deactivate left side
+            ShootProjectile(false); // Shoot to the right
         }
     }
 
