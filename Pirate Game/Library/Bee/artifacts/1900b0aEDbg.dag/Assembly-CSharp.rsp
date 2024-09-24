@@ -372,6 +372,7 @@
 "Assets/Scripts/Player/Floater.cs"
 "Assets/Scripts/Player/Shooting.cs"
 "Assets/Scripts/Treasures/Treasure.cs"
+"Assets/Scripts/UI/CameraLookAt.cs"
 "Assets/Scripts/UI/CompassUI.cs"
 "Assets/Scripts/UI/PlayerDirection.cs"
 "Assets/Scripts/Waves/WaterManager.cs"

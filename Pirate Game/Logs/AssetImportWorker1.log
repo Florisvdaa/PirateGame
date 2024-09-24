@@ -15,7 +15,7 @@ C:/Users/flori/Documents/PirateGame/PirateGame/Pirate Game
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61161
+64859
 Successfully changed project path to: C:/Users/flori/Documents/PirateGame/PirateGame/Pirate Game
 C:/Users/flori/Documents/PirateGame/PirateGame/Pirate Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/flori/Documents/PirateGame/PirateGame/Pirate Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10812] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 1063643218 [EditorId] 1063643218 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-D9VJUMCS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24632] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 896857666 [EditorId] 896857666 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-D9VJUMCS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10812] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 1063643218 [EditorId] 1063643218 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-D9VJUMCS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24632] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 896857666 [EditorId] 896857666 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-D9VJUMCS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 11.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 20.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015446 seconds.
-- Loaded All Assemblies, in  0.560 seconds
+Registered in 0.020808 seconds.
+- Loaded All Assemblies, in  1.070 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.500 seconds
-Domain Reload Profiling: 1056ms
-	BeginReloadAssembly (179ms)
+- Finished resetting the current domain, in  0.769 seconds
+Domain Reload Profiling: 1838ms
+	BeginReloadAssembly (375ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (50ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (84ms)
 	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (95ms)
-	LoadAllAssembliesAndSetupDomain (213ms)
-		LoadAssemblies (175ms)
+	initialDomainReloadingComplete (128ms)
+	LoadAllAssembliesAndSetupDomain (463ms)
+		LoadAssemblies (363ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (210ms)
-			TypeCache.Refresh (207ms)
-				TypeCache.ScanAssembly (190ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (460ms)
+			TypeCache.Refresh (456ms)
+				TypeCache.ScanAssembly (399ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (501ms)
+	FinalizeReload (771ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (409ms)
+		SetupLoadedEditorAssemblies (591ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (12ms)
+			InitializePlatformSupportModulesInManaged (46ms)
+			SetLoadedEditorAssemblies (25ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (272ms)
-			ProcessInitializeOnLoadMethodAttributes (100ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (386ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,119 +115,1019 @@ Domain Reload Profiling: 1056ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.055 seconds
-Refreshing native plugins compatible for Editor in 4.53 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.988 seconds
+Refreshing native plugins compatible for Editor in 8.36 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.020 seconds
-Domain Reload Profiling: 2070ms
-	BeginReloadAssembly (285ms)
+- Finished resetting the current domain, in  1.679 seconds
+Domain Reload Profiling: 3659ms
+	BeginReloadAssembly (510ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (120ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (125ms)
+	LoadAllAssembliesAndSetupDomain (1199ms)
+		LoadAssemblies (1079ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (478ms)
+			TypeCache.Refresh (419ms)
+				TypeCache.ScanAssembly (371ms)
+			ScanForSourceGeneratedMonoScriptInfo (42ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1680ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1279ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (206ms)
+			ProcessInitializeOnLoadAttributes (980ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 8.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (130.6 KB). Loaded Objects now: 3831.
+Memory consumption went from 134.2 MB to 134.1 MB.
+Total: 6.744900 ms (FindLiveObjects: 0.689300 ms CreateObjectMapping: 0.401200 ms MarkObjects: 5.388300 ms  DeleteObjects: 0.263600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26127.947040 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_bracket_open.png
+  artifactKey: Guid(73834023105674c4eb6cbf3f14749bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_bracket_open.png using Guid(73834023105674c4eb6cbf3f14749bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbaeaa2832a455d182bafc7b9d684d1') in 0.198606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_b.png
+  artifactKey: Guid(3a1515ec8ae388241b74574f9ecb070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_b.png using Guid(3a1515ec8ae388241b74574f9ecb070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03019bcac24fb7f58c23008b2bad354') in 0.041837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_0_outline.png
+  artifactKey: Guid(e1a2e142d3f3e9f4580e0ac2db39f8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_0_outline.png using Guid(e1a2e142d3f3e9f4580e0ac2db39f8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca321307b3f6bf6c144c587a8332e317') in 0.031407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_colon.png
+  artifactKey: Guid(5e3d266724a343b499eeba2fe4894642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_colon.png using Guid(5e3d266724a343b499eeba2fe4894642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ea72d243d57ab07f7540d4b03818c3') in 0.021649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_alt_outline.png
+  artifactKey: Guid(1afa00fd43cd86149b2bb6582f25abcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_alt_outline.png using Guid(1afa00fd43cd86149b2bb6582f25abcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a8924a39e1f4f24866fcd570accfa1') in 0.024399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_bracket_close.png
+  artifactKey: Guid(436fe5a1e7fb1c6439762ca14d2d3ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_bracket_close.png using Guid(436fe5a1e7fb1c6439762ca14d2d3ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a0e39555c40373837ee1942747dd17') in 0.019428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_4.png
+  artifactKey: Guid(9c97bc1204fcc304bad3ac71b464f1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_4.png using Guid(9c97bc1204fcc304bad3ac71b464f1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45e364bac992a37b020f12299a45ccf') in 0.025849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_6_outline.png
+  artifactKey: Guid(da5d9f06de56089479e52e29ba5e5b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_6_outline.png using Guid(da5d9f06de56089479e52e29ba5e5b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd165e6a19648a44bb6c0e10656170b1') in 0.021891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png
+  artifactKey: Guid(24940a77a3342af4c9fa84fa8ef3a371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png using Guid(24940a77a3342af4c9fa84fa8ef3a371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb08e0e4188ae4e5fedccd5b36fe6af5') in 0.016487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_down_outline.png
+  artifactKey: Guid(e1cee792e3227b94c8a8f8ba68b88375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_down_outline.png using Guid(e1cee792e3227b94c8a8f8ba68b88375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645bc2744071dbc66839c3e409bb9474') in 0.027178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_4_outline.png
+  artifactKey: Guid(00b1a6e4210c1fa488e02ac687a8b35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_4_outline.png using Guid(00b1a6e4210c1fa488e02ac687a8b35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7199a6c9e3e6793fa6bbc180f8219f') in 0.012159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_left.png
+  artifactKey: Guid(403a0e37813e1f14f8c27adb0ea24501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_left.png using Guid(403a0e37813e1f14f8c27adb0ea24501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f57c9cfce63281d2d90b4cb6a30e20') in 0.018856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_c.png
+  artifactKey: Guid(766206421038cc44bbca13f35cd3e106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_c.png using Guid(766206421038cc44bbca13f35cd3e106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c10696e40b148c0db96a5f0ebea45b') in 0.016882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_capslock_icon.png
+  artifactKey: Guid(9599d6d23ccd9544b94683969aad0129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_capslock_icon.png using Guid(9599d6d23ccd9544b94683969aad0129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa683670d399c3e105f4fba83b590b6') in 0.014664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Preview Generic.png
+  artifactKey: Guid(77260b7517eb36e4385f475354a59ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Preview Generic.png using Guid(77260b7517eb36e4385f475354a59ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c4101feee8940929ca445ae07acf32') in 0.027595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_backspace.png
+  artifactKey: Guid(d447221413e201c4daa859aaf3c2f9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_backspace.png using Guid(d447221413e201c4daa859aaf3c2f9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2537331f006c83f6c47160e03b6a7669') in 0.028484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_up_outline.png
+  artifactKey: Guid(26e0fa1a3d17f3b419512d321d86142c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_up_outline.png using Guid(26e0fa1a3d17f3b419512d321d86142c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33dabcb214d001e818ce3c7e77ad2fdc') in 0.015842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_a.png
+  artifactKey: Guid(4e3b765d39378cc448fcbb38dface07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_a.png using Guid(4e3b765d39378cc448fcbb38dface07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3fa3321f02670e560dcdc5e5bb9fc4') in 0.016974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png
+  artifactKey: Guid(5f7ecf0afe1ce0a428f42d2cfb4ca718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png using Guid(5f7ecf0afe1ce0a428f42d2cfb4ca718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9bdeaadc1fbed7cdc6b3cdf9b7f4597') in 0.019635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal_outline.png
+  artifactKey: Guid(92af7d7fa3b3bf74cbb225f7fc9b67f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal_outline.png using Guid(92af7d7fa3b3bf74cbb225f7fc9b67f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e282bdb3740b71b37ff3dffdef868b') in 0.012799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_down_outline.png
+  artifactKey: Guid(21e79241f317f6a4c9432f2fe1e0c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_down_outline.png using Guid(21e79241f317f6a4c9432f2fe1e0c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48aef8d11cf5512c451e8b2693572202') in 0.026093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_6_outline.png
+  artifactKey: Guid(06e136a6036e8fc47869394ba170deac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_6_outline.png using Guid(06e136a6036e8fc47869394ba170deac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edec3cc6817c91908c77aef4cd7d040') in 0.014966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_3_outline.png
+  artifactKey: Guid(9d2acf5eaf3543e4ea9dd89c9c5af9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_3_outline.png using Guid(9d2acf5eaf3543e4ea9dd89c9c5af9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e809fda5657d01e2b2586d6275f053f0') in 0.027119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_backspace_icon.png
+  artifactKey: Guid(3dc4ebbac2c02ec479a34c00fc638607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_backspace_icon.png using Guid(3dc4ebbac2c02ec479a34c00fc638607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c1ecf0c9ff1de438f85bd014cbf9fc') in 0.013651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows.png
+  artifactKey: Guid(4efa3d1877be2bd4ca9e44b7e1dfe0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows.png using Guid(4efa3d1877be2bd4ca9e44b7e1dfe0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe5054ce913936c5471dc6476efb0d2') in 0.018236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_9_outline.png
+  artifactKey: Guid(1649455d878e3434d9168ba58a5c3b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_9_outline.png using Guid(1649455d878e3434d9168ba58a5c3b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251674a7e8c18a201fb80dfaa6b1837c') in 0.016581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_down_outline.png
+  artifactKey: Guid(f39515838bab3e34388017e45a1e40f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_down_outline.png using Guid(f39515838bab3e34388017e45a1e40f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38927aef9934599270800ebb6f9867bc') in 0.011018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_3.png
+  artifactKey: Guid(0aa3dea278617f34192b1caa959826bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_3.png using Guid(0aa3dea278617f34192b1caa959826bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b26c491dfa397e8aa3e80b58e10275') in 0.020866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_right_outline.png
+  artifactKey: Guid(e642d926cf865994db17ac9647bc7aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_right_outline.png using Guid(e642d926cf865994db17ac9647bc7aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d57a2c31f99299ea38aafae36f3ee0') in 0.014643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_left_outline.png
+  artifactKey: Guid(486ecb9bc355fc84da233c85da0a0ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_left_outline.png using Guid(486ecb9bc355fc84da233c85da0a0ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e41053023fd64ce6e29ab15d7d74f79') in 0.013333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_1_outline.png
+  artifactKey: Guid(dd4b110f9f925ae44a967a45d4f7f4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_1_outline.png using Guid(dd4b110f9f925ae44a967a45d4f7f4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c2215fce0a2d3b30281919312119eb') in 0.026122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Preview PlayStation Series.png
+  artifactKey: Guid(a3578aa933aab3a4e826c7ac6750708f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Preview PlayStation Series.png using Guid(a3578aa933aab3a4e826c7ac6750708f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5376e6ef2d66da2b3456930f6dbd48d6') in 0.018790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000541 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_horizontal_outline.png
+  artifactKey: Guid(a7ec815d0d1dcd148a5ecd2289ae1265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_horizontal_outline.png using Guid(a7ec815d0d1dcd148a5ecd2289ae1265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720b8adcf9a997faa10d92ae193f0f81') in 0.014693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_bracket_less.png
+  artifactKey: Guid(65a4f2b37a2c5864481e82f0c95fb855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_bracket_less.png using Guid(65a4f2b37a2c5864481e82f0c95fb855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e106c2864a50471ec5283f65a64f35') in 0.011618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_5.png
+  artifactKey: Guid(74fe16651cc154146b181f17c97a8f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_5.png using Guid(74fe16651cc154146b181f17c97a8f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacb0ecfcea5009daeb2099a7f96415e') in 0.023522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_none.png
+  artifactKey: Guid(0498acd9ad173ea4894972b4b982538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_none.png using Guid(0498acd9ad173ea4894972b4b982538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f7049635473e9802efe21162c0748d') in 0.016419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_colon_outline.png
+  artifactKey: Guid(0fa9fe5c6e2a40848b634ce11f670064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_colon_outline.png using Guid(0fa9fe5c6e2a40848b634ce11f670064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613c6e657c83e2f673568d8392757064') in 0.024441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_down.png
+  artifactKey: Guid(827333110b1bd984b9a9adf362bff1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrow_down.png using Guid(827333110b1bd984b9a9adf362bff1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25a61904d66e813948a8f5a696f67ed') in 0.013079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_comma_outline.png
+  artifactKey: Guid(65d0be05d63330444a0596a42393c611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_comma_outline.png using Guid(65d0be05d63330444a0596a42393c611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3671b3b03b4aabe1332cc581c002279c') in 0.022984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_6.png
+  artifactKey: Guid(a08d6935105af3f4ba3646775e050708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_6.png using Guid(a08d6935105af3f4ba3646775e050708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160ee7e60f08f1db1182581a65d50d88') in 0.030030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_right.png
+  artifactKey: Guid(e663d4a3798d55e42b5980b9e57e2504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_right.png using Guid(e663d4a3798d55e42b5980b9e57e2504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ef7f214a0fff0ec4ed35b932a659a2') in 0.018672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_4_outline.png
+  artifactKey: Guid(97d204f175a1d0349acf7cc630fbc79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_4_outline.png using Guid(97d204f175a1d0349acf7cc630fbc79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a408a01df1304a4009535234f64310f1') in 0.024762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_apostrophe.png
+  artifactKey: Guid(fd1e1f1dfd47dec4db799d5e7a9ed280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_apostrophe.png using Guid(fd1e1f1dfd47dec4db799d5e7a9ed280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db14168cf4f718406a10423846f836ce') in 0.025495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_none.png
+  artifactKey: Guid(45aeafa019a03da458bfc828ed1cb949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_none.png using Guid(45aeafa019a03da458bfc828ed1cb949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb48c70d10226015f107da4dc2949b3') in 0.022669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_caret_outline.png
+  artifactKey: Guid(610bc282ba108054aa2159c9d7b68da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_caret_outline.png using Guid(610bc282ba108054aa2159c9d7b68da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7ba29b8491d8940de4b7a0a86b8114') in 0.026315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_1.png
+  artifactKey: Guid(090979405474f4e409938c03a37494cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_1.png using Guid(090979405474f4e409938c03a37494cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37df84ac33a75a21c2974fb1e8df8268') in 0.024183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_comma.png
+  artifactKey: Guid(78493a3b39a5a604cbb287e40404c56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_comma.png using Guid(78493a3b39a5a604cbb287e40404c56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b59289b8685f4da7431faf2e8dff93a7') in 0.024231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_down_outline.png
+  artifactKey: Guid(8a3d8c79cfced1249ac92402ade86d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_down_outline.png using Guid(8a3d8c79cfced1249ac92402ade86d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b24545210bf2b29565e20d56e4226d') in 0.026201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_alt_outline.png
+  artifactKey: Guid(e7d97f48475c8d14890fcc71144825a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_alt_outline.png using Guid(e7d97f48475c8d14890fcc71144825a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289fbcd269873271e4563ff7761d2b83') in 0.018592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_left_outline.png
+  artifactKey: Guid(26ab71b0fc9efbb45b5bbf2d47955d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_left_outline.png using Guid(26ab71b0fc9efbb45b5bbf2d47955d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b5769cbd84c24f8d8e9b859dcc99dc') in 0.015980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_backspace_outline.png
+  artifactKey: Guid(1408ab39d2f083145b29622730fd8a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_backspace_outline.png using Guid(1408ab39d2f083145b29622730fd8a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3dd07e2ca594d25f2fbb473a573976c') in 0.024112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_c_outline.png
+  artifactKey: Guid(51ec9f01e91f8ed46b376ee9ed266559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_c_outline.png using Guid(51ec9f01e91f8ed46b376ee9ed266559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e525de21a0406e13d0081226020257') in 0.032200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows.png
+  artifactKey: Guid(bb1a94ffea4775d40a2ead00f3a2be62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows.png using Guid(bb1a94ffea4775d40a2ead00f3a2be62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f065e3e9f771351e2cd235f68f451cf') in 0.016757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_capslock.png
+  artifactKey: Guid(f45e29b1d0ef8aa448c9b805d479a42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_capslock.png using Guid(f45e29b1d0ef8aa448c9b805d479a42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144f301b43a2f02da4b29d86550fd865') in 0.025030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_all.png
+  artifactKey: Guid(4ad21b437b7744e469c8f7cf06946001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_all.png using Guid(4ad21b437b7744e469c8f7cf06946001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2d90726c9c8d921ea51a199676c263') in 0.046482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Preview Xbox Series.png
+  artifactKey: Guid(2a6ddab0cb409564fbe0c4ffd65d0fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Preview Xbox Series.png using Guid(2a6ddab0cb409564fbe0c4ffd65d0fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8cdc5ae0f2b095922ba181c5e0eb3a4') in 0.013404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_right_outline.png
+  artifactKey: Guid(f1d2c050b30d0c64495dc1814032c49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_arrows_right_outline.png using Guid(f1d2c050b30d0c64495dc1814032c49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095180b898007a89cfb5dc4a628dd87f') in 0.029346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_colon.png
+  artifactKey: Guid(9dda3accf7515604c868cbfb05982987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Double/keyboard_colon.png using Guid(9dda3accf7515604c868cbfb05982987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a477e9927a54a2b7e304c75e8a912942') in 0.021288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.364355 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_ctrl.png
+  artifactKey: Guid(f517ae904add7b34cb21df071d224e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_ctrl.png using Guid(f517ae904add7b34cb21df071d224e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04743beb4bd501e02dcd019a07510461') in 0.009119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_delete.png
+  artifactKey: Guid(2895db0867774434f98af4485a6da9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_delete.png using Guid(2895db0867774434f98af4485a6da9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43d7d7793ca780b47f196d020ae0886') in 0.023145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_d.png
+  artifactKey: Guid(08db5b2cb3632ee43b2c31f9e59cad87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_d.png using Guid(08db5b2cb3632ee43b2c31f9e59cad87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9832dc1e37d9bfea47fc92a121ccf7e') in 0.012918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_enter.png
+  artifactKey: Guid(79b827c65bc8c23438b4981b607cec32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_enter.png using Guid(79b827c65bc8c23438b4981b607cec32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e399a7dfe294a613253743f53e2a8be') in 0.017889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_e_outline.png
+  artifactKey: Guid(e9ae3d8715f917946b3dfc4101019852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_e_outline.png using Guid(e9ae3d8715f917946b3dfc4101019852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d370569699f65b28c29135ccbadf21') in 0.022656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.046264 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_exclamation.png
+  artifactKey: Guid(7da4e885507772149a8e1080e0d92363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_exclamation.png using Guid(7da4e885507772149a8e1080e0d92363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68847a86f180e470602020cbc1c96a05') in 0.009401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f11_outline.png
+  artifactKey: Guid(44a0ad2cd7b6bce4eb7a8da1478f0fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f11_outline.png using Guid(44a0ad2cd7b6bce4eb7a8da1478f0fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040fd13c781a25ada827148c89f555e6') in 0.021328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f_outline.png
+  artifactKey: Guid(0ffbc9171a561cc4fb4a1932f812730b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f_outline.png using Guid(0ffbc9171a561cc4fb4a1932f812730b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e76cf8037b967eab107f79b70fbe6b') in 0.018322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f4.png
+  artifactKey: Guid(a9d9ef22c2eb5d6449e2225c31ad19be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f4.png using Guid(a9d9ef22c2eb5d6449e2225c31ad19be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e607489707a8c24046626598ee3435') in 0.022804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f7.png
+  artifactKey: Guid(a0fc23a75a7df3749a94f48cbe0e50c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f7.png using Guid(a0fc23a75a7df3749a94f48cbe0e50c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82a49a02dd357e419ee300b91573d4c') in 0.022758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f8_outline.png
+  artifactKey: Guid(15aee3aeec44196419d55b5b25594cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f8_outline.png using Guid(15aee3aeec44196419d55b5b25594cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5ea82a00354380f9c4afa5eeee534b') in 0.028720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f1.png
+  artifactKey: Guid(03d1f7f85cc4dcc4783ab76a74562660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f1.png using Guid(03d1f7f85cc4dcc4783ab76a74562660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '480c7cbe6e4d2dc8fcea0cbe58caa4f4') in 0.023658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f12.png
+  artifactKey: Guid(660c1ef3f7c15e7408a3ecab97a889f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f12.png using Guid(660c1ef3f7c15e7408a3ecab97a889f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '688b97d0546b82a70bd3d2fd050860fb') in 0.024547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_function_outline.png
+  artifactKey: Guid(47b44a5e4e90f734997fe93871d0d965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_function_outline.png using Guid(47b44a5e4e90f734997fe93871d0d965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae626e034f156a9bcf524798916fb6a6') in 0.026131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f1_outline.png
+  artifactKey: Guid(4541dbe61e79b364e9f16ae459c4654d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_f1_outline.png using Guid(4541dbe61e79b364e9f16ae459c4654d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d40ced134dda5cb80deea8c40a0edca') in 0.016306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001770 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_g.png
+  artifactKey: Guid(3dcb55772df8eba44ba654cb28c4c626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_g.png using Guid(3dcb55772df8eba44ba654cb28c4c626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2f660ca364f271805e7a43662da9d7') in 0.018704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_i.png
+  artifactKey: Guid(3d52faed1231d1a4f9803bf3c38d99c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_i.png using Guid(3d52faed1231d1a4f9803bf3c38d99c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1202458473de08161216ff891b2df6d') in 0.039652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_insert.png
+  artifactKey: Guid(e4e097d5594bb2c42a230c9e43399f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_insert.png using Guid(e4e097d5594bb2c42a230c9e43399f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8bdd227e7e834e1ec8b35ce8555cd3') in 0.022797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_k.png
+  artifactKey: Guid(acbfbac9a8ac22c4cbed3c3f5f408aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_k.png using Guid(acbfbac9a8ac22c4cbed3c3f5f408aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e365bb598bc65da2647f034e640292') in 0.019345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_h_outline.png
+  artifactKey: Guid(7d0597d0f661ae541b48aac0b91dccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_h_outline.png using Guid(7d0597d0f661ae541b48aac0b91dccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea983730ecf31cfe01fee2e87f16d2d5') in 0.011449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_j_outline.png
+  artifactKey: Guid(51f3cddb28af1b943816fcfbefdc5678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/UI/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_j_outline.png using Guid(51f3cddb28af1b943816fcfbefdc5678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e71abf5de15828a522412a84b9a87d9') in 0.024829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 10.331 seconds
+Refreshing native plugins compatible for Editor in 56.24 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.407 seconds
+Domain Reload Profiling: 14503ms
+	BeginReloadAssembly (5290ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (102ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1694ms)
+	RebuildCommonClasses (366ms)
+	RebuildNativeTypeToScriptingClass (45ms)
+	initialDomainReloadingComplete (1039ms)
+	LoadAllAssembliesAndSetupDomain (3352ms)
+		LoadAssemblies (6146ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (299ms)
+			TypeCache.Refresh (146ms)
+				TypeCache.ScanAssembly (8ms)
+			ScanForSourceGeneratedMonoScriptInfo (114ms)
+			ResolveRequiredComponents (33ms)
+	FinalizeReload (4411ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1598ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (20ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (211ms)
+			ProcessInitializeOnLoadAttributes (1240ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (34ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 8.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 3852.
+Memory consumption went from 131.0 MB to 130.9 MB.
+Total: 15.091600 ms (FindLiveObjects: 1.553500 ms CreateObjectMapping: 1.636700 ms MarkObjects: 11.673900 ms  DeleteObjects: 0.221200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 587.037503 seconds.
+  path: Assets/Scripts/UI/CameraLookAt.cs
+  artifactKey: Guid(395a391b6a5fbbb48b8922ee10c11fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/CameraLookAt.cs using Guid(395a391b6a5fbbb48b8922ee10c11fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b467ae1a82c2f39ab085db65c749f0ca') in 0.008976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.222 seconds
+Refreshing native plugins compatible for Editor in 6.72 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.919 seconds
+Domain Reload Profiling: 3130ms
+	BeginReloadAssembly (373ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (86ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (654ms)
+		LoadAssemblies (820ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (58ms)
+			TypeCache.Refresh (31ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1919ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (855ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (622ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 8.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.5 KB). Loaded Objects now: 3867.
+Memory consumption went from 133.0 MB to 132.9 MB.
+Total: 3.128400 ms (FindLiveObjects: 0.382600 ms CreateObjectMapping: 0.333800 ms MarkObjects: 2.346500 ms  DeleteObjects: 0.064400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.162 seconds
+Refreshing native plugins compatible for Editor in 11.98 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.305 seconds
+Domain Reload Profiling: 3464ms
+	BeginReloadAssembly (356ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (89ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (660ms)
+		LoadAssemblies (807ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (53ms)
+			TypeCache.Refresh (37ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (2306ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1027ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (157ms)
+			ProcessInitializeOnLoadAttributes (789ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 13.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 3882.
+Memory consumption went from 135.2 MB to 135.1 MB.
+Total: 10.032800 ms (FindLiveObjects: 1.348600 ms CreateObjectMapping: 1.715600 ms MarkObjects: 6.623200 ms  DeleteObjects: 0.343400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.515 seconds
+Refreshing native plugins compatible for Editor in 20.46 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.213 seconds
+Domain Reload Profiling: 3722ms
+	BeginReloadAssembly (464ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (131ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (114ms)
+	LoadAllAssembliesAndSetupDomain (842ms)
+		LoadAssemblies (996ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (91ms)
+			TypeCache.Refresh (38ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2214ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (834ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (145ms)
+			ProcessInitializeOnLoadAttributes (628ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 6.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.5 KB). Loaded Objects now: 3897.
+Memory consumption went from 137.1 MB to 137.0 MB.
+Total: 5.297500 ms (FindLiveObjects: 1.031200 ms CreateObjectMapping: 0.330500 ms MarkObjects: 3.601900 ms  DeleteObjects: 0.328400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.301 seconds
+Refreshing native plugins compatible for Editor in 12.83 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.818 seconds
+Domain Reload Profiling: 3114ms
+	BeginReloadAssembly (442ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (70ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (624ms)
-		LoadAssemblies (526ms)
+		CreateAndSetChildDomain (113ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (679ms)
+		LoadAssemblies (844ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (280ms)
-			TypeCache.Refresh (242ms)
-				TypeCache.ScanAssembly (215ms)
+		AnalyzeDomain (88ms)
+			TypeCache.Refresh (43ms)
+				TypeCache.ScanAssembly (3ms)
 			ScanForSourceGeneratedMonoScriptInfo (22ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1020ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1820ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (771ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (132ms)
-			ProcessInitializeOnLoadAttributes (582ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (558ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 5.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 48 unused Assets / (131.2 KB). Loaded Objects now: 3826.
-Memory consumption went from 134.1 MB to 133.9 MB.
-Total: 3.271100 ms (FindLiveObjects: 0.305800 ms CreateObjectMapping: 0.297800 ms MarkObjects: 2.493000 ms  DeleteObjects: 0.173500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.751 seconds
-Refreshing native plugins compatible for Editor in 5.62 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.643 seconds
-Domain Reload Profiling: 2390ms
-	BeginReloadAssembly (275ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (364ms)
-		LoadAssemblies (512ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (28ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1644ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (783ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (145ms)
-			ProcessInitializeOnLoadAttributes (576ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 5.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3339 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (102.3 KB). Loaded Objects now: 3841.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 10.175800 ms (FindLiveObjects: 1.024900 ms CreateObjectMapping: 1.119700 ms MarkObjects: 7.880800 ms  DeleteObjects: 0.147600 ms)
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 3912.
+Memory consumption went from 139.1 MB to 139.0 MB.
+Total: 8.198700 ms (FindLiveObjects: 0.959300 ms CreateObjectMapping: 0.557800 ms MarkObjects: 6.332300 ms  DeleteObjects: 0.344500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -246,53 +1146,53 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.688 seconds
-Refreshing native plugins compatible for Editor in 4.73 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.362 seconds
+Refreshing native plugins compatible for Editor in 7.60 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.626 seconds
-Domain Reload Profiling: 2308ms
-	BeginReloadAssembly (209ms)
+- Finished resetting the current domain, in  2.128 seconds
+Domain Reload Profiling: 3481ms
+	BeginReloadAssembly (477ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (44ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (368ms)
-		LoadAssemblies (475ms)
+		CreateAndSetChildDomain (91ms)
+	RebuildCommonClasses (71ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (722ms)
+		LoadAssemblies (912ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (18ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1627ms)
+		AnalyzeDomain (106ms)
+			TypeCache.Refresh (52ms)
+				TypeCache.ScanAssembly (5ms)
+			ScanForSourceGeneratedMonoScriptInfo (26ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (2129ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (775ms)
+		SetupLoadedEditorAssemblies (1003ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (16ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (154ms)
-			ProcessInitializeOnLoadAttributes (545ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
+			BeforeProcessingInitializeOnLoad (170ms)
+			ProcessInitializeOnLoadAttributes (752ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
 			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 4.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3339 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 3856.
-Memory consumption went from 133.0 MB to 132.9 MB.
-Total: 10.232700 ms (FindLiveObjects: 0.791800 ms CreateObjectMapping: 0.576200 ms MarkObjects: 8.704200 ms  DeleteObjects: 0.157200 ms)
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 3927.
+Memory consumption went from 141.0 MB to 140.9 MB.
+Total: 10.571700 ms (FindLiveObjects: 0.860000 ms CreateObjectMapping: 1.341200 ms MarkObjects: 7.297100 ms  DeleteObjects: 1.067700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -309,159 +1209,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 11277.300262 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_06.fbx
-  artifactKey: Guid(fcf508237712e024b856ded9647528f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_06.fbx using Guid(fcf508237712e024b856ded9647528f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c553830a9f64f99f454c885264efd0') in 0.222568 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Base_02.fbx
-  artifactKey: Guid(f28fb850ee9933e47a044b9d0cc16f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Base_02.fbx using Guid(f28fb850ee9933e47a044b9d0cc16f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b358ca7ead18553eeeac8dc342ecae') in 0.028981 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_07.fbx
-  artifactKey: Guid(d092fa87a240dee4f87191185e02e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_07.fbx using Guid(d092fa87a240dee4f87191185e02e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5bdb90e20d3b44fc5b930c9765130c') in 0.023927 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_Short_01.fbx
-  artifactKey: Guid(0a69eac314c1a3e4881de17daea7e2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_Short_01.fbx using Guid(0a69eac314c1a3e4881de17daea7e2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d83247dc16bd046bffaee563ebe75ca') in 0.021200 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_Long_05.fbx
-  artifactKey: Guid(c4ab0868c64addf41be41162d082de71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_Long_05.fbx using Guid(c4ab0868c64addf41be41162d082de71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c9f37a6bfd23473c116c1685a94d61') in 0.026950 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Door_04.fbx
-  artifactKey: Guid(d42b95983fad0834cb778a3fa8f1b20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Door_04.fbx using Guid(d42b95983fad0834cb778a3fa8f1b20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c62386fc3a5027cb58477bd99f6017') in 0.018811 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Stairs_01.fbx
-  artifactKey: Guid(b119d64ec8f5a44469bac0e909f79b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Stairs_01.fbx using Guid(b119d64ec8f5a44469bac0e909f79b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26da44322e8d09223a645eefd556249d') in 0.023929 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_Long_02.fbx
-  artifactKey: Guid(6c1c210683e90a84590d202eb90786e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Cuba_Room_Long_02.fbx using Guid(6c1c210683e90a84590d202eb90786e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d22c29f9dab9f326783747022abb5cf') in 0.010939 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Dock_Bridge_01.fbx
-  artifactKey: Guid(21607e1fc27a9fa4db7abb59dbaf7374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Dock_Bridge_01.fbx using Guid(21607e1fc27a9fa4db7abb59dbaf7374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6caaee62ce5295144755adc3d856a9a5') in 0.010962 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Room_03.fbx
-  artifactKey: Guid(aa065643699d8f34295ff5d71426e8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Room_03.fbx using Guid(aa065643699d8f34295ff5d71426e8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684261e27f3b904018d0426d240761ae') in 0.023144 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Door_03.fbx
-  artifactKey: Guid(24865e219cf6e094892ebbde19e23d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Door_03.fbx using Guid(24865e219cf6e094892ebbde19e23d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1238bdc68ff3052edfc2b409dc86bc4') in 0.011558 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Mansion_Corner_01.fbx
-  artifactKey: Guid(ddc22d95e8ffc4e409645a2aea0abaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Mansion_Corner_01.fbx using Guid(ddc22d95e8ffc4e409645a2aea0abaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2baf199ac5d9d3b3759455cc915cdee6') in 0.012961 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Room_02.fbx
-  artifactKey: Guid(8fd12456c7c28ae44b9c517b814a6707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Models/SM_Bld_Fort_Room_02.fbx using Guid(8fd12456c7c28ae44b9c517b814a6707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0def85a24623bffa6bfe51c2cfc4d3bd') in 0.019656 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.789 seconds
-Refreshing native plugins compatible for Editor in 4.51 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.289 seconds
+Refreshing native plugins compatible for Editor in 6.14 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.674 seconds
-Domain Reload Profiling: 2456ms
-	BeginReloadAssembly (241ms)
+- Finished resetting the current domain, in  2.848 seconds
+Domain Reload Profiling: 4134ms
+	BeginReloadAssembly (408ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (50ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (432ms)
-		LoadAssemblies (542ms)
+		CreateAndSetChildDomain (102ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (695ms)
+		LoadAssemblies (885ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (7ms)
+		AnalyzeDomain (49ms)
+			TypeCache.Refresh (26ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1675ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2851ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (804ms)
+		SetupLoadedEditorAssemblies (1246ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (160ms)
-			ProcessInitializeOnLoadAttributes (568ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (230ms)
+			ProcessInitializeOnLoadAttributes (924ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (16ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 5.05 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 8.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3338 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (101.4 KB). Loaded Objects now: 3883.
-Memory consumption went from 139.4 MB to 139.3 MB.
-Total: 3.995300 ms (FindLiveObjects: 0.386400 ms CreateObjectMapping: 0.435300 ms MarkObjects: 3.092000 ms  DeleteObjects: 0.080700 ms)
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.5 KB). Loaded Objects now: 3942.
+Memory consumption went from 142.9 MB to 142.8 MB.
+Total: 12.786100 ms (FindLiveObjects: 0.848200 ms CreateObjectMapping: 1.955800 ms MarkObjects: 9.710600 ms  DeleteObjects: 0.268300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -478,15 +1274,457 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 395.108770 seconds.
-  path: Assets/Imports/PolygonPirates/Prefabs/Vehicles/SM_Flag_Pirate_01.prefab
-  artifactKey: Guid(4dd63217c105a2d43b24bf5f1b5622c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/PolygonPirates/Prefabs/Vehicles/SM_Flag_Pirate_01.prefab using Guid(4dd63217c105a2d43b24bf5f1b5622c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36063646f641d1b9ee5a615e1c663979') in 0.143412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.147 seconds
+Refreshing native plugins compatible for Editor in 7.56 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.976 seconds
+Domain Reload Profiling: 3117ms
+	BeginReloadAssembly (337ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (81ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (650ms)
+		LoadAssemblies (779ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (68ms)
+			TypeCache.Refresh (31ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1977ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (816ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (162ms)
+			ProcessInitializeOnLoadAttributes (587ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 5.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.6 KB). Loaded Objects now: 3957.
+Memory consumption went from 144.9 MB to 144.8 MB.
+Total: 4.938500 ms (FindLiveObjects: 0.502100 ms CreateObjectMapping: 1.032900 ms MarkObjects: 3.271200 ms  DeleteObjects: 0.130400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.090 seconds
+Refreshing native plugins compatible for Editor in 5.14 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.985 seconds
+Domain Reload Profiling: 3070ms
+	BeginReloadAssembly (339ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (80ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (566ms)
+		LoadAssemblies (713ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (55ms)
+			TypeCache.Refresh (32ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1987ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (874ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (652ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 5.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 3972.
+Memory consumption went from 146.8 MB to 146.7 MB.
+Total: 3.756700 ms (FindLiveObjects: 0.876500 ms CreateObjectMapping: 0.451000 ms MarkObjects: 2.362500 ms  DeleteObjects: 0.064700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.107 seconds
+Refreshing native plugins compatible for Editor in 8.05 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.844 seconds
+Domain Reload Profiling: 2942ms
+	BeginReloadAssembly (320ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (82ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (626ms)
+		LoadAssemblies (749ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (58ms)
+			TypeCache.Refresh (22ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1844ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (804ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (602ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 5.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.5 KB). Loaded Objects now: 3987.
+Memory consumption went from 148.7 MB to 148.6 MB.
+Total: 9.287300 ms (FindLiveObjects: 0.957900 ms CreateObjectMapping: 1.645000 ms MarkObjects: 6.316100 ms  DeleteObjects: 0.364600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.148 seconds
+Refreshing native plugins compatible for Editor in 6.39 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.869 seconds
+Domain Reload Profiling: 3011ms
+	BeginReloadAssembly (393ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (85ms)
+	RebuildCommonClasses (75ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (573ms)
+		LoadAssemblies (764ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (54ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1870ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (841ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (141ms)
+			ProcessInitializeOnLoadAttributes (644ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 9.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.5 KB). Loaded Objects now: 4002.
+Memory consumption went from 150.6 MB to 150.5 MB.
+Total: 5.490200 ms (FindLiveObjects: 0.285000 ms CreateObjectMapping: 0.224100 ms MarkObjects: 4.741400 ms  DeleteObjects: 0.237400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.318 seconds
+Refreshing native plugins compatible for Editor in 9.47 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.847 seconds
+Domain Reload Profiling: 3159ms
+	BeginReloadAssembly (367ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (90ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (134ms)
+	LoadAllAssembliesAndSetupDomain (726ms)
+		LoadAssemblies (880ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (57ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (23ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1848ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (869ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (675ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.5 KB). Loaded Objects now: 4017.
+Memory consumption went from 152.6 MB to 152.5 MB.
+Total: 3.323800 ms (FindLiveObjects: 0.274100 ms CreateObjectMapping: 0.230200 ms MarkObjects: 2.717000 ms  DeleteObjects: 0.100900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.032 seconds
+Refreshing native plugins compatible for Editor in 12.15 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.664 seconds
+Domain Reload Profiling: 2691ms
+	BeginReloadAssembly (348ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (101ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (551ms)
+		LoadAssemblies (657ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (68ms)
+			TypeCache.Refresh (27ms)
+				TypeCache.ScanAssembly (4ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1665ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (788ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (145ms)
+			ProcessInitializeOnLoadAttributes (588ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 9.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 4032.
+Memory consumption went from 154.5 MB to 154.4 MB.
+Total: 9.128000 ms (FindLiveObjects: 1.056900 ms CreateObjectMapping: 1.156400 ms MarkObjects: 6.474200 ms  DeleteObjects: 0.438100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.987 seconds
+Refreshing native plugins compatible for Editor in 11.50 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.253 seconds
+Domain Reload Profiling: 3235ms
+	BeginReloadAssembly (335ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (95ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (514ms)
+		LoadAssemblies (654ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (41ms)
+			TypeCache.Refresh (23ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (2254ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1010ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (167ms)
+			ProcessInitializeOnLoadAttributes (755ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (21ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 7.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (102.4 KB). Loaded Objects now: 4047.
+Memory consumption went from 156.4 MB to 156.3 MB.
+Total: 3.735100 ms (FindLiveObjects: 0.562200 ms CreateObjectMapping: 0.454000 ms MarkObjects: 2.647700 ms  DeleteObjects: 0.070000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

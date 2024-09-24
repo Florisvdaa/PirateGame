@@ -8,6 +8,9 @@ public class Treasure : MonoBehaviour, IInteratable
     [SerializeField] private ItemPoolSO itemPool;
 
     private bool isOpened = false;
+
+    [SerializeField] private GameObject interactCanvas;
+
     [SerializeField] private GameObject ropePrefab;
     [SerializeField] private float lerpSpeed = 5f;
     [SerializeField] private float minDistanceToPlayer = 2f; // Minimum distance to maintain from player
@@ -19,6 +22,10 @@ public class Treasure : MonoBehaviour, IInteratable
     [SerializeField] private bool hasRopeConnected = false;
     private Vector3 originalPosition;
 
+    private void Awake()
+    {
+        interactCanvas.SetActive(false);
+    }
     public void OpenChest()
     {
         // Add opening animation
@@ -39,6 +46,8 @@ public class Treasure : MonoBehaviour, IInteratable
         {
             Debug.Log("No items available in the pool.");
         }
+
+        StartCoroutine(DestoryItem());
     }
 
     private void ConnectRope(Transform playerTransform)
@@ -53,6 +62,8 @@ public class Treasure : MonoBehaviour, IInteratable
     public void Interact(Transform playerTransform)
     {
         // Create a UI that shows when you are in range to handle input
+        interactCanvas.SetActive(true);
+
         if (Input.GetKeyDown(KeyCode.E) && !isOpened)
         {
             OpenChest();
@@ -104,4 +115,11 @@ public class Treasure : MonoBehaviour, IInteratable
         int randomIndex = Random.Range(0, itemPool.itemPool.Count);
         return itemPool.itemPool[randomIndex];
     }
+
+    private IEnumerator DestoryItem()
+    {
+        yield return new WaitForEndOfFrame();
+        Destroy(this.gameObject);
+    }
+
 }

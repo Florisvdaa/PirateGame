@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory:
-    items: []
+  - {fileID: 0}
 --- !u!1 &730034601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,26 +2046,6 @@ PrefabInstance:
     - target: {fileID: 3070967320903488548, guid: bb10278e3fd536941a2d2be14f39a7ba, type: 3}
       propertyPath: m_Name
       value: Treasure
-      objectReference: {fileID: 0}
-    - target: {fileID: 6963559872588914494, guid: bb10278e3fd536941a2d2be14f39a7ba, type: 3}
-      propertyPath: itemPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 3cd7e8005a257624da81a5d41f85416b, type: 2}
-    - target: {fileID: 6963559872588914494, guid: bb10278e3fd536941a2d2be14f39a7ba, type: 3}
-      propertyPath: ropePrefab
-      value: 
-      objectReference: {fileID: 8336416258946592463, guid: e25df7ab4f451f34da620e29afdd9e18, type: 3}
-    - target: {fileID: 6963559872588914494, guid: bb10278e3fd536941a2d2be14f39a7ba, type: 3}
-      propertyPath: floatAmplitude
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6963559872588914494, guid: bb10278e3fd536941a2d2be14f39a7ba, type: 3}
-      propertyPath: minDistanceToPlayer
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6963559872588914494, guid: bb10278e3fd536941a2d2be14f39a7ba, type: 3}
-      propertyPath: ropeLengthThreshold
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7191747550113218231, guid: bb10278e3fd536941a2d2be14f39a7ba, type: 3}
       propertyPath: m_LocalPosition.x

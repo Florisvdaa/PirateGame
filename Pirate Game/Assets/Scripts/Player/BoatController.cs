@@ -11,14 +11,10 @@ public class BoatController : MonoBehaviour
     [SerializeField] private float maxSpeed = 40f;  // Maximum speed the boat can reach
     [SerializeField] private float minSpeed = 15f;   // Minimum speed the boat can reach
 
-    [SerializeField] private float drag = 1f;
-    private bool isMovingForward = false;
-
     [SerializeField] private GameObject playerVisual;
     [SerializeField] private float tiltAngle = 15f;
 
     [SerializeField] private float interactRange;
-
     [SerializeField] private GameObject ropePrefab;
 
     private Rigidbody rb;
