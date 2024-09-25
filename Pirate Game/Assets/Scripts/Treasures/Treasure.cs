@@ -24,7 +24,7 @@ public class Treasure : MonoBehaviour, IInteratable
 
     private void Awake()
     {
-        interactCanvas.SetActive(false);
+        DisableUI();
     }
     public void OpenChest()
     {
@@ -61,9 +61,6 @@ public class Treasure : MonoBehaviour, IInteratable
 
     public void Interact(Transform playerTransform)
     {
-        // Create a UI that shows when you are in range to handle input
-        interactCanvas.SetActive(true);
-
         if (Input.GetKeyDown(KeyCode.E) && !isOpened)
         {
             OpenChest();
@@ -103,6 +100,15 @@ public class Treasure : MonoBehaviour, IInteratable
             float floatOffset = Mathf.Sin(Time.time * floatFrequency) * floatAmplitude;
             transform.position = new Vector3(transform.position.x, transform.position.y + floatOffset, transform.position.z);
         }
+    }
+    public void EnableUI()
+    {
+        interactCanvas.SetActive(true);
+    }
+
+    public void DisableUI()
+    {
+        //interactCanvas.SetActive(false);
     }
 
     private ItemSO GetRandomItem()

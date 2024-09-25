@@ -18,6 +18,7 @@ public class BoatController : MonoBehaviour
     [SerializeField] private GameObject ropePrefab;
 
     private Rigidbody rb;
+    private IInteratable lastInteractable = null;
 
     private void Start()
     {
@@ -88,19 +89,31 @@ public class BoatController : MonoBehaviour
     private void HandleDetection()
     {
         // Find all colliders within the interactRange radius
-
         Collider[] colliders = Physics.OverlapSphere(transform.position, interactRange);
+
+        IInteratable currentInteractable = null;
 
         foreach (Collider collider in colliders)
         {
-            // check if the object has an IInteractable componnent
+            // Check if the object has an IInteractable component
             IInteratable interactable = collider.GetComponent<IInteratable>();
             if (interactable != null)
             {
+                currentInteractable = interactable;
                 interactable.Interact(transform);
-                return;
+                interactable.EnableUI();
+                break; // Found one, so no need to check other colliders
             }
         }
+
+        // Handle when the player leaves the interact range of the previous interactable
+        if (lastInteractable != null && currentInteractable != lastInteractable)
+        {
+            lastInteractable.DisableUI();
+        }
+
+        // Update the last interactable object to the current one
+        lastInteractable = currentInteractable;
     }
     private void OnDrawGizmosSelected()
     {

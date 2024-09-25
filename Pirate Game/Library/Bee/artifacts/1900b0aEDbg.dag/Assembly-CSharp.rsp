@@ -362,6 +362,8 @@
 "Assets/Imports/GogoGaga/OptimizedRopesAndCables/Script/RopeWindEffect.cs"
 "Assets/Imports/LowPolyWater_Pack/Scripts/LowPolyWater.cs"
 "Assets/Scripts/Camera/CameraFollow.cs"
+"Assets/Scripts/Environment/DockingSystem.cs"
+"Assets/Scripts/Environment/Merchant.cs"
 "Assets/Scripts/Interfaces/IInteratable.cs"
 "Assets/Scripts/Inventory System/Inventory.cs"
 "Assets/Scripts/Inventory System/InventoryManager.cs"

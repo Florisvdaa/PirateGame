@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3512781543362642593}
   - component: {fileID: 5115390133045200545}
   - component: {fileID: 7230448146682694620}
+  - component: {fileID: 6648622815107381313}
   m_Layer: 0
   m_Name: CanonBall
   m_TagString: Untagged
@@ -114,6 +115,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0.25, z: 0}
+--- !u!114 &6648622815107381313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654475525464758467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2843055742560de4fb22c471a6625fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  lifeTime: 5
 --- !u!1001 &6216332489525240023
 PrefabInstance:
   m_ObjectHideFlags: 0
